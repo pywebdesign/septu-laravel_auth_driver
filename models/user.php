@@ -968,7 +968,7 @@ class User extends \Eloquent
 	    	throw new SeptuException(__('septu::septu.username_length', array('min' => $min_length, 'max' => $max_length)));
 	    }
 
-	    $this->set_attribute('username', $this->_hasher()->create($username));
+	    $this->set_attribute('username', $username);
 	}
 
 	/**
