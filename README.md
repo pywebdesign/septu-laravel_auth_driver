@@ -6,7 +6,7 @@ Getting Septu:
 --------------
 Clone or Download Septu into your Laravel installation's bundles directory. You can download the latest version zipped version of Septu [here](https://github.com/dberry37388/septu-laravel_auth_driver/zipball/master) or go into your laravel/bundles directory and run the following git command:
 
-    git clone -b git@github.com:dberry37388/septu-laravel_auth_driver.git septu
+    git clone -b master git@github.com:dberry37388/septu-laravel_auth_driver.git septu
 
 You should now have the latest stable version of Septu in your laravel bundles directory... Now it's time to make this thing work!
 
@@ -39,6 +39,6 @@ This will install all of the necessary tables to get Septu up and running.  Tabl
 
 That's it!  You should now have Septu installed as your default Laravel Auth driver.
 
-More to Come
+What's Next?
 ------------
-I will be updating this documentation with more specific details in the near future, but right now if I don't get to some actual work, I may be looking for a new job here in the near future :)  Peace out, and "happy coding"
+[Configuring Septu](git clone -b git@github.com:dberry37388/septu-laravel_auth_driver.git septu) - Learn more about configuring Septu
