@@ -153,7 +153,7 @@ return array(
 
 	'permissions' => array(
 		'superuser' => 'superuser' // define rule for super user access.
-	)
+	),
 
 	/*
 	|--------------------------------------------------------------------------
