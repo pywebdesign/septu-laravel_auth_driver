@@ -952,6 +952,26 @@ class User extends \Eloquent
 	}
 
 	/**
+	 *  Setter Method for Username
+	 *  
+	 *  @param string $username
+	 */
+	public function set_username($username)
+	{
+	    // check minimum length
+	    $min_length = Config::get('septu::septu.username.min_length');
+	    $max_length = Config::get('septu::septu.username.max_length');
+	    $username_length = strlen($username);
+
+	    if ($username_length < $min_length or $username_length > $max_length)
+	    {
+	    	throw new SeptuException(__('septu::septu.username_length', array('min' => $min_length, 'max' => $max_length)));
+	    }
+
+	    $this->set_attribute('username', $this->_hasher()->create($username));
+	}
+
+	/**
 	 *  Setter Method for Activation Hash
 	 *  
 	 *  @param string $password

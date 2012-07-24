@@ -59,6 +59,7 @@ return array(
 	'account_disabled'            => 'Your account is currently disabled. Please see your system administrator.',
 	'common_password'			  => 'Please choose a more difficult password.',
 	'password_length'             => 'Your password must be between :min and :max characters.',
+	'username_length'             => 'Your username must be between :min and :max characters.',
 
 	/**
 	 * Groups
