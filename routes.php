@@ -3,8 +3,8 @@
 Route::get('(:bundle)/create', function()
 {
 	$arguments = array(
-		'username' => 'dberry60',
-		'password' => 'Stinky1*',
+		'username' => 'admin',
+		'password' => 'Welcome2012',
 		'email'    => 'daniel@danielberry.me',
 		'profile'  => array(
 			'first_name' => 'Daniel',
@@ -20,8 +20,8 @@ Route::get('(:bundle)/create', function()
 Route::get('(:bundle)/attempt', function()
 {
 	$arguments = array(
-		'username' => 'dberry60',
-		'password' => 'Stinky1*',
+		'username' => 'admin',
+		'password' => 'Welcome2012',
 		'remember' => false
 	);
 
