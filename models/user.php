@@ -223,8 +223,12 @@ class User extends \Eloquent
 		// this is the array we will pass back if successful
 		$user_array = array(
 			'id' 			  => $user->id,
-			'activation_hash' => (($new_user['activation_hash'])) ? $new_user['activation_hash'] : null
-		);	
+		);
+
+		if ( ! empty($new_user['activation_hash']))
+		{
+			$user_array['activation_hash'] = (($new_user['activation_hash'])) ? $new_user['activation_hash'] : null;
+		}
 
 		/**
 		 * return the user object if successful, return false if not
@@ -818,6 +822,11 @@ class User extends \Eloquent
 			return true;
 		}
 
+		if (empty(static::$_permissions))
+		{
+			return false;
+		}
+
 		/**
 		 * Get the current page in our rule format
 		 * We'll use this if there is no $resource set and to check our array against.
@@ -846,13 +855,11 @@ class User extends \Eloquent
 			$resource = array($resource);
 		}
 
-		var_dump($resource); exit;
-
 		// Loop through the resources and check if it exists in the rules/permissions
 		foreach ($resource as $rule)
 		{
 			// if it is in the config rules & not in the array rules, than we don't have access.
-			if (in_array($rule, $this->rules) and ! in_array($rule, static::$_permissions))
+			if (! in_array($rule, static::$_permissions))
 			{
 				return false;
 			}

@@ -165,7 +165,7 @@ return array(
 	|
 	*/
 
-	'require_activation' => false,
+	'require_activation' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -175,7 +175,7 @@ return array(
 	| If set to 0, the user's account login will be disabled.
 	|
 	*/
-	'default_enabled' =>  true,
+	'default_enabled' =>  false,
 
 
 	/*
