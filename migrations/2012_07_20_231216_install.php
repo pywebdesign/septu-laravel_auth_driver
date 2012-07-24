@@ -268,6 +268,7 @@ class Septu_Install {
 				$table->increments('id', 11);
 				$table->integer('permission_id');
 	        	$table->integer('user_id');
+	        	$table->boolean('deny');
 	        	$table->timestamps();
 
 	        	// add foreign keys
