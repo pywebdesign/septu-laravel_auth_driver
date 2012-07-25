@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.7.0" />
+
+	<title>Class Septu\Septu | Septu</title>
+
+	<script type="text/javascript" src="resources/combined.js?2398159053"></script>
+	<script type="text/javascript" src="elementlist.js?2607584820"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1567499433" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Septu.html">Septu<span></span></a>
+						<ul>
+				<li><a href="namespace-Septu.Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="namespace-Septu.Libraries.Hasher.html">Hasher<span></span></a>
+						<ul>
+				<li><a href="namespace-Septu.Libraries.Hasher.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Septu.Models.html">Models</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Septu.Septu.html">Septu</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Septu.SeptuException.html">SeptuException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Septu.html" title="Summary of Septu"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="septu-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Septu</h1>
+
+
+	<div class="description">
+	
+<p>Septu Auth Driver Class</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Laravel\Auth\Drivers\Driver
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Septu\Septu</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Septu.html">Septu</a><br />
+		<b>Package:</b> Septu<br />
+
+				<b>Author:</b>
+				Daniel Berry &lt;<a
+href="mailto:daniel&#64;danielberry.me">daniel&#64;<!---->danielberry.me</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-Septu.Septu.html#31" title="Go to source code">septu.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="retrieve" id="_retrieve">
+
+		<td class="attributes"><code>
+			 public 
+			mixed|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieve">#</a>
+		<code><a href="source-class-Septu.Septu.html#39" title="Go to source code">retrieve</a>( <span>integer <var>$id</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get the current user of the application.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the current user of the application.</p>
+
+<p>If the user is a guest, null should be returned.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="user" id="_user">
+
+		<td class="attributes"><code>
+			 public 
+			mixed|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_user">#</a>
+		<code><a href="source-class-Septu.Septu.html#52" title="Go to source code">user</a>( <span> <var>$identifier</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Access an instance of the User Model</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Access an instance of the User Model</p>
+
+<p>If no identifier is specified, should return an empty instance of the
+model.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="group" id="_group">
+
+		<td class="attributes"><code>
+			 public 
+			mixed|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_group">#</a>
+		<code><a href="source-class-Septu.Septu.html#76" title="Go to source code">group</a>( <span> <var>$identifier</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get instance of the Group Model</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get instance of the Group Model</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="permissions" id="_permissions">
+
+		<td class="attributes"><code>
+			 public 
+			mixed|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_permissions">#</a>
+		<code><a href="source-class-Septu.Septu.html#86" title="Go to source code">permissions</a>( <span> <var>$identifier</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Get instance of the Permissions Model</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get instance of the Permissions Model</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="check" id="_check">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_check">#</a>
+		<code><a href="source-class-Septu.Septu.html#96" title="Go to source code">check</a>( )</code>
+
+		<div class="description short">
+			
+<p>Determine if the user is logged in.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Determine if the user is logged in.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="login" id="_login">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_login">#</a>
+		<code><a href="source-class-Septu.Septu.html#118" title="Go to source code">login</a>( <span>string <var>$token</var></span>, <span>boolean <var>$remember</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Login the user assigned to the given token.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Login the user assigned to the given token.</p>
+
+<p>The token is typically a numeric ID for the user.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$token</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$remember</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attempt" id="_attempt">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attempt">#</a>
+		<code><a href="source-class-Septu.Septu.html#161" title="Go to source code">attempt</a>( <span>array <var>$arguments</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Attempt to log a user into the application.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Attempt to log a user into the application.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arguments</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="_hasher" id="__hasher">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Septu.Libraries.Hasher.Hasher.html">Septu\Libraries\Hasher\Hasher</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#__hasher">#</a>
+		<code><a href="source-class-Septu.Septu.html#216" title="Go to source code">_hasher</a>( )</code>
+
+		<div class="description short">
+			
+<p>Creates an instance of the Hash Driver</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates an instance of the Hash Driver</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Septu.Libraries.Hasher.Hasher.html">Septu\Libraries\Hasher\Hasher</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Septu API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

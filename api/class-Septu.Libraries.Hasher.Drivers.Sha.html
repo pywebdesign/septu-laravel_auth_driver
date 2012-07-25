@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.7.0" />
+
+	<title>Class Septu\Libraries\Hasher\Drivers\Sha | Septu</title>
+
+	<script type="text/javascript" src="resources/combined.js?2398159053"></script>
+	<script type="text/javascript" src="elementlist.js?2607584820"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1567499433" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-Septu.html">Septu<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Septu.Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Septu.Libraries.Hasher.html">Hasher<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Septu.Libraries.Hasher.Drivers.html">Drivers</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Septu.Models.html">Models</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Septu.Libraries.Hasher.Drivers.Septu.html">Septu</a></li>
+				<li class="active"><a href="class-Septu.Libraries.Hasher.Drivers.Sha.html">Sha</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Septu.Libraries.Hasher.Drivers.html" title="Summary of Septu\Libraries\Hasher\Drivers"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="septu-api-documentation.zip" title="Download documentation as ZIP archive"><span>Download</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Sha</h1>
+
+
+	<div class="description">
+	
+<p>Sha256/512 Hash Strategy</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+Septu\Libraries\Hasher\Drivers\Hasher
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Septu\Libraries\Hasher\Drivers\Sha</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Septu.html">Septu</a>\<a href="namespace-Septu.Libraries.html">Libraries</a>\<a href="namespace-Septu.Libraries.Hasher.html">Hasher</a>\<a href="namespace-Septu.Libraries.Hasher.Drivers.html">Drivers</a><br />
+		
+
+		<b>Located at</b> <a href="source-class-Septu.Libraries.Hasher.Drivers.Sha.html#22" title="Go to source code">libraries/hasher/drivers/sha.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Septu.Libraries.Hasher.Drivers.Sha.html#27" title="Go to source code">__construct</a>( <span> <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_create">#</a>
+		<code><a href="source-class-Septu.Libraries.Hasher.Drivers.Sha.html#35" title="Go to source code">create</a>( <span>string <var>$password</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a random salt and hashes the given password with the salt.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a random salt and hashes the given password with the salt.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br>Password to generate hash/salt for</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="check" id="_check">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_check">#</a>
+		<code><a href="source-class-Septu.Libraries.Hasher.Drivers.Sha.html#49" title="Go to source code">check</a>( <span>string <var>$password</var></span>, <span>string <var>$hashed_password</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Check to make sure our passwords match</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Check to make sure our passwords match</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br> password to test</dd>
+					<dt><var>$hashed_password</var></dt>
+					<dd><code>string</code><br> stored hashed password</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>true/false<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hash" id="_hash">
+
+		<td class="attributes"><code>
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hash">#</a>
+		<code><a href="source-class-Septu.Libraries.Hasher.Drivers.Sha.html#69" title="Go to source code">hash</a>( <span>string <var>$password</var></span>, <span>integer <var>$salt</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Hash the given password</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Hash the given password</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$password</var></dt>
+					<dd><code>string</code><br> password provided</dd>
+					<dt><var>$salt</var></dt>
+					<dd><code>integer</code><br>$work_factor work factor for hashing</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>hashed password<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Septu API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
