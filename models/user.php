@@ -166,15 +166,19 @@ class User extends \Eloquent
 		}
 
 		// set the activation
-		if (empty($attributes['activate']))
+		$require_activation = Config::get('septu::septu.require_activation');
+
+		if (empty($attributes['activated']) and $require_activation === true)
 		{
-			$attributes['activate'] = Config::get('septu::septu.require_activation');					
+			$attributes['activated'] = null;					
 		}
 
 		// set the activation
-		if (empty($attributes['enabled']))
+		$default_enabled = Config::get('septu::septu.default_enabled');
+
+		if (empty($attributes['enabled']) and $default_enabled === false)
 		{
-			$attributes['enabled'] = Config::get('septu::septu.default_enabled');					
+			$attributes['enabled'] = null;					
 		}
 
 		// create the array containing the new user details
@@ -182,14 +186,10 @@ class User extends \Eloquent
 			'username'   => ( ! empty($attributes['username'])) ? strtolower(trim($attributes['username'])) : null,
 			'email'	     => strtolower(trim($attributes['email'])),
 			'password'   => $attributes['password'],
-			'activated'  => ($attributes['activate']) ? false : true,
+			'activated'  => ($attributes['activated']) ? true : false,
+			'activation_hash' => ($attributes['activated']) ? '' : Str::random(18),
 			'enabled'     => ($attributes['enabled']) ? true : false,
 		);
-
-		if ($attributes['activate'])
-		{
-			$new_user['activation_hash'] = Str::random(18);
-		}
 
 		// insert the new user
 		$user = new self($new_user);
