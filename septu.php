@@ -100,19 +100,21 @@ class Septu extends Driver {
 	 */
 	public function check()
 	{
-		// grab the user id from the token
-		$user_id = $this->token;
+		// // grab the user id from the token
+		// $user_id = $this->token;
 
-		// if no user id, then check to see if we have a cookie
-		if ($user_id === null or ! is_numeric($user_id))
-		{
-			$user_id = $this->recall();
-		}
+		// // if no user id, then check to see if we have a cookie
+		// if ($user_id === null or ! is_numeric($user_id))
+		// {
+		// 	$user_id = $this->recall();
+		// }
 
-		// simple check to make sure the user is in the system
-		$query = $this->user()->where('id', '=', $user_id);
+		// // simple check to make sure the user is in the system
+		// $query = $this->user()->where('id', '=', $user_id);
 
-		return $query->count() != 0;
+		// return $query->count() != 0;
+		
+		return ($this->user()->exists) ? true : false;
 	}
 
 	/**
